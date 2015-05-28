@@ -1,0 +1,76 @@
+﻿body {
+    background-color: black;
+    color: white;        
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;    
+    width: 600px;
+}
+h2 {
+    padding-bottom: 20px;
+}
+
+.gameOptions {
+    margin-bottom: 20px;    
+}
+
+.resultsbutton {    
+    height:  20px;
+    width:  20px;
+    border-radius: 100%;
+    background-color: grey; 
+}
+.colorpickersection {
+    border: 2px solid white;    
+}
+
+.colorpickerlist {
+    list-style-type: none;
+    padding-left: 10px;    
+}
+.colorpickerlist li {
+    display: inline;
+}
+
+.colorpicker {
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;    
+}
+
+.guessArea {
+    margin-top: 20px;
+}
+
+.guess {
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;    
+    padding: 0;
+    background-color: gray;
+}
+
+.redbutton {    
+    background-color: red;
+}
+.bluebutton {
+    background-color: blue;
+}
+.greenbutton {
+    background-color: green;
+}
+.yellowbutton {
+    background-color: yellow; 
+}
+.orangebutton {
+    background-color: orange; 
+}
+.purplebutton {
+    background-color: purple; 
+}
+.blackresultbutton {
+    background-color: black; 
+}
+.whiteresultbutton {
+    background-color: white; 
+}

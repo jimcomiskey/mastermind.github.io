@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome to Jim's implementation of MasterMind!</title>
+    <script type="text/javascript" src="Scripts/jquery-2.1.0.min.js"></script>
+    <!--<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>-->
+    <script type="text/javascript" src="MasterMind.js"></script>
+    <link rel="stylesheet" type="text/css" href="MasterMind.css" />
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Jim's implementation of MasterMind!</h1>
+        <h2>
+            For information on how to play this fun, addictive little game, check out this <a href="https://www.youtube.com/watch?v=rmp05sCXTRg">video</a>.
+        </h2>        
+    </div>
+    <div class="content">
+        <div class="gameOptions">
+            <input type="radio" name="gameMode" id="codeBreaker" />Code Breaker
+            <input type="radio" name="gameMode" id="codeMaker"/>Code Maker
+        </div>
+        <div class="duplicateSetting">
+            <p>Are there duplicate colors in the code?</p>
+            <input type="radio" name="duplicateMode" id="duplicatesOff" />No
+            <input type="radio" name="duplicateMode" id="duplicatesOn" />Yes
+            <input type="radio" name="duplicateMode" id="duplicatesUnknown" />I'm not telling!
+        </div>
+        <div class="colorpickersection">
+            <p>Pick a color:</p>
+            <ul class="colorpickerlist">
+                <li>
+                    <button class="colorpicker redbutton"></button>
+                </li>
+                <li>
+                    <button class="colorpicker greenbutton"></button>
+                </li>
+                <li>
+                    <button class="colorpicker yellowbutton"></button>
+                </li>
+                <li>
+                    <button class="colorpicker bluebutton"></button>
+                </li>
+                <li>
+                    <button class="colorpicker orangebutton"></button>
+                </li>
+                <li>
+                    <button class="colorpicker purplebutton"></button>
+                </li>
+            </ul>
+        </div>
+        <div class="guessArea">
+            <table id="answers"></table>
+            <table id="submittedGuess" class="guesses">
+                <tr>
+                    <td>
+                        <button class="guess activeguess"></button>
+                    </td>
+                    <td>
+                        <button class="guess activeguess"></button>
+                    </td>
+                    <td>
+                        <button class="guess activeguess"></button>
+                    </td>
+                    <td>
+                        <button class="guess activeguess"></button>
+                    </td>
+                    <td>
+                        <button id="submitGuess">Submit Guess</button>
+                    </td>
+                    <td>
+                        <button id="submitCode">Submit Code</button>
+                    </td>
+
+                    <!--<td>
+                        <button id="showAnswer">Show Answer</button>
+                    </td>
+                    -->
+
+                    <td>
+                        <input id ="resetGame" type="button" value="Reset" />
+                    </td>
+                </tr>
+            </table>
+            <p><em id="resultsLabel">Results:</em></p>
+            <table id="guesshistory" class="guesses"></table>
+        </div>
+    </div>
+</body>
+</html>
